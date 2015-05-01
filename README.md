@@ -12,7 +12,7 @@ Also, add **peek** key binding to show what is in tmux buffer.
 
 ## Install
 
-1. Add above line to your `~/.tmux.conf`
+Add above line to your `~/.tmux.conf`
 
 ```bash
 set-option -g @tpm_plugins "        \
@@ -20,7 +20,7 @@ set-option -g @tpm_plugins "        \
 "
 ```
 
-2. Press `Prefix + U` in tmux session
+then, press `Prefix + U` in tmux session
 
 ## Usage
 
