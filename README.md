@@ -12,7 +12,7 @@ Also, add **peek** key binding to show what is in tmux buffer.
 
 ## Install
 
-Add above line to your `~/.tmux.conf`
+Add below line to your `~/.tmux.conf`
 
 ```bash
 set-option -g @tpm_plugins "        \
