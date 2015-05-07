@@ -25,16 +25,16 @@ then, press `Prefix + I` in tmux session.
 
 ## Usage
 
-Default peek key binding is `Prefix + P`. If you change this binding, set below line to your `~/.tmux.conf`.
+Default peek key binding is `Prefix + P`. If you change this key binding, set below line to your `~/.tmux.conf`.
 
 ```bash
-set-option -g @peek 'x' # or your favorite key
+set-option -g @peek 'x' # or your favorite key binding
 ```
 
-Default paste key binding is `Prefix + ]`. If you change this binding, set below line to your `~/.tmux.conf`.
+Default paste key binding is `Prefix + ]`. If you change this key binding, set below line to your `~/.tmux.conf`.
 
 ```bash
-set-option -g @paste 'X' # or your favorite key
+set-option -g @paste 'X' # or your favorite key binding
 ```
 
 ## License
