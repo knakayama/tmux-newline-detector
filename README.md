@@ -16,6 +16,7 @@ Add below line to your `~/.tmux.conf`
 
 ```bash
 set-option -g @tpm_plugins "        \
+    tmux-plugins/tpm                \
     knakayama/tmux-newline-detecter \
 "
 ```
