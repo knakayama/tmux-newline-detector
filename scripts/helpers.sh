@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 is_command_available() {
   local cmd="$1"
