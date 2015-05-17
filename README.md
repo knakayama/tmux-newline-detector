@@ -1,7 +1,7 @@
 tmux newline detecter
 =====================
 
-This [tpm](https://github.com/tmux-plugins/tpm) plugin detects newline in tmux buffer (or clipboard if you use [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)), and ask for you whether or not pasting it to terminal with **kindness**.
+This [tpm](https://github.com/tmux-plugins/tpm) plugin detects newline in tmux buffer (or clipboard if you use [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)), and asks for you whether or not pasting it to terminal with **kindness**.
 Also, add **peek** key binding to show what is in tmux buffer.
 
 ## Requirements
@@ -12,26 +12,26 @@ Also, add **peek** key binding to show what is in tmux buffer.
 
 ## Install
 
-Add below line to your `~/.tmux.conf`
+Add the following lines to your `~/.tmux.conf`
 
 ```bash
-set-option -g @tpm_plugins "        \
+set-option -g @tpm_plugins '        \
     tmux-plugins/tpm                \
     knakayama/tmux-newline-detecter \
-"
+'
 ```
 
 then, press `Prefix + I` in tmux session.
 
 ## Usage
 
-Default peek key binding is `Prefix + P`. If you change this key binding, set below line to your `~/.tmux.conf`.
+Default peek key binding is `Prefix + P`. If you change this key binding, set the following line to your `~/.tmux.conf`.
 
 ```bash
 set-option -g @peek 'x' # or your favorite key binding
 ```
 
-Default paste key binding is `Prefix + ]`. If you change this key binding, set below line to your `~/.tmux.conf`.
+Default paste key binding is `Prefix + ]`. If you change this key binding, set the following line to your `~/.tmux.conf`.
 
 ```bash
 set-option -g @paste 'X' # or your favorite key binding
