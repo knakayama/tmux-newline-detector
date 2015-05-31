@@ -39,7 +39,7 @@ set-option -g @paste 'X' # or your favorite key binding
 
 ## License
 
-[MIT](http://knakayama.mit-license.org/)
+MIT
 
 ## Author
 
