@@ -16,10 +16,7 @@ What is **kindess**? If your buffer is only one sentence and includes newline, t
 Add the following lines to your `~/.tmux.conf`
 
 ```bash
-set-option -g @tpm_plugins '        \
-    tmux-plugins/tpm                \
-    knakayama/tmux-newline-detecter \
-'
+set-option -g @plugin knakayama/tmux-newline-detecter
 ```
 
 then, press `Prefix + I` in tmux session.
