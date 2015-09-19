@@ -6,7 +6,7 @@ Also, add **peek** key binding to show what is in tmux buffer.
 
 ## Requirements
 
-1. tmux
+1. [tmux](https://github.com/tmux/tmux)
 2. [tpm](https://github.com/tmux-plugins/tpm)
 3. [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) (optional)
 
