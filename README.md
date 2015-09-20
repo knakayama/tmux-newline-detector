@@ -1,4 +1,4 @@
-tmux newline detecter
+tmux newline detector
 =====================
 
 This [tpm](https://github.com/tmux-plugins/tpm) plugin detects newline in tmux buffer (or clipboard if you use [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)), and asks for you whether or not pasting it to terminal with **kindness**. Also, add **peek** key binding to show what is in tmux buffer.
@@ -16,7 +16,7 @@ What is **kindess**? If your buffer is only one sentence and includes newline, t
 Add the following lines to your `~/.tmux.conf`
 
 ```bash
-set-option -g @plugin knakayama/tmux-newline-detecter
+set-option -g @plugin knakayama/tmux-newline-detector
 ```
 
 then, press `Prefix + I` in tmux session.
