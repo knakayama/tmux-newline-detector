@@ -27,5 +27,5 @@ paste_key() {
   fi
 }
 
-tmux bind-key "$(peek_key)"  split-window "${CURRENT_DIR}/scripts/peek.sh"
+tmux bind-key "$(peek_key)"  split-window -l 10 "${CURRENT_DIR}/scripts/peek.sh"
 tmux bind-key "$(paste_key)" run-shell    "${CURRENT_DIR}/scripts/paste.sh"
