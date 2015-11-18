@@ -42,6 +42,9 @@ bind-key X run-shell "~/.tmux/plugins/tmux-newline-detector/scripts/paste.sh -p"
 bind-key x choose-buffer "run-shell \"~/.tmux/plugins/tmux-newline-detector/scripts/paste.sh -b '%%'\""
 ```
 
+Note that due to the way the scripts process their arguments,
+argumetns with spaces in them are not likely to work.
+
 ## License
 
 MIT
