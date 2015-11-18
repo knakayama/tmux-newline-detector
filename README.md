@@ -35,6 +35,13 @@ Default paste key binding is `Prefix + ]`. If you change this key binding, set t
 set-option -g @paste 'X' # or your favorite key binding
 ```
 
+This will manage the plugin bindings for you, but if you need to do something more complex, like pass arguments, you'll need to do that yourself:
+
+```bash
+bind-key X run-shell "~/.tmux/plugins/tmux-newline-detector/scripts/paste.sh -p"
+bind-key x choose-buffer "run-shell \"~/.tmux/plugins/tmux-newline-detector/scripts/paste.sh -b '%%'\""
+```
+
 ## License
 
 MIT

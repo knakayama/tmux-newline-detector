@@ -18,7 +18,7 @@ if [[ $(tmux show-buffer | wc -l) -eq 1 ]]; then
 fi
 
 if tmux show-buffer | hexdump | grep -qE '[[:space:]](0[ad]|0d0a)[[:space:]]?'; then
-  tmux confirm-before -p "Include newline. Paste?(y/n)" "run-shell 'tmux paste-buffer'"
+  tmux confirm-before -p "Include newline. Paste?(y/n)" "run-shell 'tmux paste-buffer $@'"
 else
-  tmux paste-buffer
+  tmux paste-buffer "$@"
 fi
