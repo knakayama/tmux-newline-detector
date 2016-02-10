@@ -9,7 +9,7 @@ if is_osx && is_command_available 'reattach-to-user-namespace'; then
 fi
 
 args="$*"
-buffer="$(tmux list-buffers -F '#{buffer_name}' | head -n 1)"
+buffer="$(tmux list-buffers | sed 's/:.*//' | head -n 1)"
 # Grab a buffer selector if one exists
 if echo "$args" | grep -P '\s[-]b\s+\S+' >/dev/null 2>&1
 then

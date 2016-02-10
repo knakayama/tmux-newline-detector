@@ -43,7 +43,7 @@ bind-key x choose-buffer "run-shell \"~/.tmux/plugins/tmux-newline-detector/scri
 ```
 
 Note that due to the way the scripts process their arguments,
-argumetns with spaces in them are not likely to work.
+arguments with spaces in them are not likely to work.
 
 ## License
 
