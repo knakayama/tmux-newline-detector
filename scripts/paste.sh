@@ -17,15 +17,14 @@ then
   args="$(echo "$args" | sed -r 's/\s+[-]b\s+\S+\s*/ /')"
 fi
 
-# remove newline if one sentence
+# remove any trailing newlines; works because shell command
+# substitutions remove trailing newline characters ; see
+# http://stackoverflow.com/a/12148703
 #
-# wc -l works fine here; test example: 
-# $ echo -e 'foo\nbar\rbaz\r\nqux\n\rwibble\n' | wc -l
-# 5
-if [ "$(tmux show-buffer -b $buffer | wc -l)" -eq 1 ]
-then
-  tmux show-buffer -b $buffer | tr -d '\n' | tmux load-buffer -b $buffer -
-fi
+# We do this because some systems/versions of tmux have a trailing
+# newline for single-line items, and some don't.
+#
+printf %s "$(tmux show-buffer -b $buffer)" | tmux load-buffer -b $buffer -
 
 if [ "$(tmux show-buffer -b $buffer | wc -l)" -gt 0 ]
 then
